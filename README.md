@@ -6,7 +6,8 @@ This project is a game of Dodgeball that utilizes linked lists to store the thro
 # Report
 MSCI 240 – Algorithms & Data Structures: Assignment 2
 Matthew Erxleben
-Introduction:
+
+## Introduction:
 The purpose of this report is to explain the testing strategy and implementation of the methods created in this the DodgeballManager class. This report will also discuss any issues that were uncovered in completing the project. 
 The entire program is tested through the DodgeballMain class to ensure basic functionality of the program as a whole. A high number of JUnit tests for DodgeballManager constructor, dodge method, and the hit method are used to test the standard, extreme, and error cases of each method/constructor individually. This will be outlined using an input and expected output format. This is to cover all behaviour of the methods and make sure it works fluently with all types of cases. This section will also describe generally how the other methods were tested to ensure functionality. The JUnit tests will also follow a particular naming convention to provide linearity between tests. The code for these JUnit tests will be submitted. 
 The implementation section of this report will discuss the implementation of the methods and constructor that were created to make the DodgeballManager class. This will explain the DodgeballManager constructor, dodge method, and the hit method and will consist of outlining the logic used when creating these methods and constructors, and explaining the syntax of them. The implementation is tested by the testing plan to ensure its functionality. 
