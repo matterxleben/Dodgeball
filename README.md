@@ -1,4 +1,4 @@
-# MSCI 240 - Data Structures and Algorithms: Dodgeball Assignment
+# MSCI 240 - Data Structures & Algorithms: Dodgeball Assignment
 
 This project is a game of Dodgeball that utilizes linked lists to store the throwers and the dodgers
 
