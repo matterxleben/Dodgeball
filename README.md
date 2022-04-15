@@ -5,7 +5,6 @@ This project is a game of Dodgeball that utilizes linked lists to store the thro
 
 # Report
 MSCI 240 – Algorithms & Data Structures: Assignment 2
-Matthew Erxleben
 
 ## Introduction:
 The purpose of this report is to explain the testing strategy and implementation of the methods created in this the DodgeballManager class. This report will also discuss any issues that were uncovered in completing the project. 
@@ -24,21 +23,21 @@ There is a naming convention used for these JUnit tests to provide linearity bet
 The methods in the DodgeballManager class (including the DodgeballManager constructor, dodge method, and hit method) are all tested through the DodgeballMain class to ensure basic functionality of the program as a whole. 
 
 ### JUnit Tests:
-DodgeballManager constructor:
-•	Standard case: (testDodgeballManagerStandardCase) 2 string lists containing names of throwers and names of dodgers, test if the constructor properly constructs 2 linked lists with names from string list position in the corresponding node. 
-•	Extreme case: (testDodgeballManagerLarge) 2 very long string lists containing names of throwers and names of dodgers, test if the constructor properly constructs 2 linked lists with names from string list position in the corresponding node.
-•	Extreme case: (testDodgeballManagerOneNode) 2 string lists containing names of throwers and names of dodgers that are only 1 name, test if the constructor properly constructs 2 linked lists both with only 1 node, therefore test if the next node is null.
-•	Error case: (testDodgeballManagerEmptyList) 2 string lists that are empty, the program should throw an illegalArguementException as the list cannot be empty.
-•	Error case: (testDodgeballManagerNullList) 2 string lists that are Null, the program should throw an illegalArguementException as the list cannot be null.
-Dodge method:
-•	Standard case: (testDodgeStandardCase) thrower and dodger names in list, check if score goes up for dodger
-•	Error case: (testDodgeNullName) thrower name is null, therefore an exception should be thrown illegalArguementException as the name cannot be null
-•	Error case: (testDodgeEmptyStringName) thrower name is a blank string, therefore an exception should be thrown illegalArguementException as the name cannot be a blank string
-Hit method:
-•	Standard case: Check if score goes up for thrower whos name is now in dodger list and Check if thrower gets swapped to dodger and doger gets swapped to thrower.
-•	Error case: (testHitNullName) thrower name is null, therefore an exception should be thrown illegalArguementException as the name cannot be null
-•	Error case: (testHitEmptyStringName) thrower name is a blank string, therefore an exception should be thrown illegalArguementException as the name cannot be a blank string
-A short section describing testing strategy at a high level for other methods:
+#### DodgeballManager constructor:
+- Standard case: (testDodgeballManagerStandardCase) 2 string lists containing names of throwers and names of dodgers, test if the constructor properly constructs 2 linked lists with names from string list position in the corresponding node. 
+- Extreme case: (testDodgeballManagerLarge) 2 very long string lists containing names of throwers and names of dodgers, test if the constructor properly constructs 2 linked lists with names from string list position in the corresponding node.
+- Extreme case: (testDodgeballManagerOneNode) 2 string lists containing names of throwers and names of dodgers that are only 1 name, test if the constructor properly constructs 2 linked lists both with only 1 node, therefore test if the next node is null.
+- Error case: (testDodgeballManagerEmptyList) 2 string lists that are empty, the program should throw an illegalArguementException as the list cannot be empty.
+- Error case: (testDodgeballManagerNullList) 2 string lists that are Null, the program should throw an illegalArguementException as the list cannot be null.
+#### Dodge method:
+- Standard case: (testDodgeStandardCase) thrower and dodger names in list, check if score goes up for dodger
+- Error case: (testDodgeNullName) thrower name is null, therefore an exception should be thrown illegalArguementException as the name cannot be null
+- Error case: (testDodgeEmptyStringName) thrower name is a blank string, therefore an exception should be thrown illegalArguementException as the name cannot be a blank string
+#### Hit method:
+- Standard case: Check if score goes up for thrower whos name is now in dodger list and Check if thrower gets swapped to dodger and doger gets swapped to thrower.
+- Error case: (testHitNullName) thrower name is null, therefore an exception should be thrown illegalArguementException as the name cannot be null
+- Error case: (testHitEmptyStringName) thrower name is a blank string, therefore an exception should be thrown illegalArguementException as the name cannot be a blank string
+#### A short section describing testing strategy at a high level for other methods:
 The other methods were tested through using the DodgeballMain class and running the DodgeballManager through that to see the code properly runs and is completely functional. For example, we can see that the Printer Throwers and Print Dodgers methods are fully functional and work completely through the scoreboard is displayed that shows each score per name and in different positions, and that changes every time a hit or dodge happens in the game. We can also see that the get maximum method is functional as it is able to see that the maximum has been achieved and the print winner method works as it displays the player who has achieved the maximum score and won the game, as well as the throwers contains and dodgers contains methods. 
 
 ## Implementation:
