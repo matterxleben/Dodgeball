@@ -1,0 +1,22 @@
+{
+// Configure your Run and Preview buttons here.
+
+// Run button configuration
+  "commands": {
+      "Compile & Run (DodgeballMain)" : "ant compile && java -cp bin DodgeballMain",
+      "Compile & Run (current file)" : "ant compile && java -cp bin {{filename_no_ext}}",
+      "Build All" : "ant compile",
+      "Run DodgeballMain" : "java -cp bin DodgeballMain",
+      "Run Current File" : "java -cp bin {{filename_no_ext}}"
+//        "Node version": "node --version"
+  },
+
+// Preview button configuration
+//  "preview": {
+//        "Project Index (static)": "https://{{domain}}/{{index}}",
+//        "Current File (static)": "https://{{domain}}/{{filepath}}",
+//        "Box URL": "https://{{domain3000}}/"
+//  },
+  "debugger": [{"type":"JAVA","command":"-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5105","before":"ant debug -DremoteDebug=true","uuid":"9b4e44a7-08ee-c784-9f86-3de4c7ef5676","name":"Debug (DodgeballMain)"},{"type":"JAVA","command":"-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5105","before":"javac -g -d . {{filepath}} && java -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5105 {{filepath}} ","single":true,"path":"{{filepath}}","args":"","rootFolder":"","uuid":"5eb9d4cb-1765-c31e-42d5-1077fa5cb42a","name":"Debug Current File"}],
+  "autogradeTestScripts": [".guides/secure/autograde.py"]
+}
