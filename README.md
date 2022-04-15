@@ -1,6 +1,6 @@
 # MSCI 240 - Data Structures & Algorithms: Dodgeball Assignment
 
-This project utilizes linked lists to create an interactive game of Dodgeball
+This project utilizes linked lists to create an interactive game of Dodgeball.
 
 ## Introduction:
 The purpose of this report is to explain the testing strategy and implementation of the methods created in this the DodgeballManager class. This report will also discuss any issues that were uncovered in completing the project. 
